@@ -1,0 +1,19 @@
+0.- Base de datos "test" dentro de mysql y el script de creación esta adjunto
+
+1.- abrimos terminal  y dentro de la carpeta backend ejecutamos npm i express mysql nodemon. 
+2.- express es un servidor simple y nodemon nos permite reiniciar nuestro servidor
+3.- Si ejecuto el comando node index.js me aparecerá "Connected to backend"
+4.- Otra opcion es ejecutar npm start que ejecuta el script definido en package.json que se ejecutara a traves de nodemon, ahora cualquier cambio en el codigo me lo vuelve a recargar automaticamente.
+
+5.- Ahora puedo utilizar un get en postman localhost:8800/books para obtener los datos de los libros
+6.- Tambien puedo hacer un localhost:8800/books donde se muestra un array con los datos de la tabla books
+
+7.- Me cambio a la parte client de nuestro proyecto en otra terminal
+8.- añado el comando npm install
+9.- añado el comando npm start
+
+10.- El fichero App.js añado los componentes que voy a utilizar 
+11.- Dentro de src/pages esta las tres rutas para añadir Add.jsx, listar Books.jsx, actualizar Update.jsx
+12.- Si entro dentro de http://localhost:3000 ya puedo interactuar
+
+13.- Las imagenes de las portadas no estan incluidas
