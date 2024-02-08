@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import imagen from "../imagenes/foto.jpg";
 
 const Books = () => {
   const [books, setBooks] = useState([]);
@@ -29,16 +30,17 @@ const Books = () => {
       console.log(err);
     }
   };
-
+  //<img src={book.cover} alt="" />
+  //cambiar imagen para que la coja desde el campo de la base de datos cover
   return (
     <div>
       <h1>Lama Book Shop</h1>
       <div className="books">
         {books.map((book) => (
           <div key={book.id} className="book">
-            <img src={book.cover} alt="" />
+            <img src={imagen} alt="" />
             <h2>{book.title}</h2>
-            <p>{book.description}</p>
+            <p>{book.desc}</p>
             <span>${book.price}</span>
             <button className="delete" onClick={() => handleDelete(book.id)}>Delete</button>
             <button className="update">
